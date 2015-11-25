@@ -1,0 +1,69 @@
+Last login: Wed Nov 25 08:17:02 on ttys000
+[13:46:03] ~
+// ♥ pwd
+/Users/merimaredzic
+[13:46:07] ~
+// ♥ cd desktop
+[13:46:19] desktop
+// ♥ mkdir basic_repo
+[13:46:26] desktop
+// ♥ cd basic_repo
+[13:46:30] basic_repo
+// ♥ touch index.html
+[13:46:37] basic_repo
+// ♥ touch style.css
+[13:46:41] basic_repo
+// ♥ touch code.txt
+[13:46:45] basic_repo
+// ♥ git init
+Initialized empty Git repository in /Users/merimaredzic/Desktop/basic_repo/.git/
+[13:46:54] basic_repo
+// ♥ git add .
+[13:46:58] basic_repo
+// ♥ git commit
+subl -w: subl: command not found
+error: There was a problem with the editor 'subl -w'.
+Please supply the message using either -m or -F option.
+[13:47:02] basic_repo
+// ♥ git commit -m "initial commit"
+[master (root-commit) 037c33e] initial commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 code.txt
+ create mode 100644 index.html
+ create mode 100644 style.css
+[13:47:13] (master) basic_repo
+// ♥ git remote add origin https://github.com/mredzic/basic_repo.git
+[13:48:17] (master) basic_repo
+// ♥ git branch
+* master
+[13:48:44] (master) basic_repo
+// ♥ git push origin develop
+error: src refspec develop does not match any.
+error: failed to push some refs to 'https://github.com/mredzic/basic_repo.git'
+[13:50:11] (master) basic_repo
+// ♥ git push origin master
+Username for 'https://github.com': mredzic
+Password for 'https://mredzic@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 231 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mredzic/basic_repo.git
+ * [new branch]      master -> master
+[13:51:24] (master) basic_repo
+// ♥ git checkout -b 'add_content'
+Switched to a new branch 'add_content'
+[13:52:05] (add_content) basic_repo
+// ♥ git add .
+[13:54:13] (add_content) basic_repo
+// ♥ git commit -m "added content to the files"
+[add_content dd551f7] added content to the files
+ 2 files changed, 13 insertions(+)
+[13:54:26] (add_content) basic_repo
+// ♥ git push origin master
+Username for 'https://github.com': mredzic
+Password for 'https://mredzic@github.com': 
+Everything up-to-date
+[13:54:46] (add_content) basic_repo
+// ♥ 
